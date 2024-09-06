@@ -104,13 +104,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <sap:WorkflowViewStateService.ViewState>
-    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
-      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
-    </scg:Dictionary>
-  </sap:WorkflowViewStateService.ViewState>
-  <Flowchart DisplayName="Excel_Automation" sap:VirtualizedContainerService.HintSize="908.8,377.6" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Excel_Automation" sap:VirtualizedContainerService.HintSize="908.8,481.6" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
@@ -121,7 +115,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">294.8,52.1 250.2,52.1 250.2,75</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">294.8,52.1 294.8,82.1 255.2,82.1 255.2,107.6</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -141,24 +135,24 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="529.6,700" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="cd9da5d3-e83d-40a1-89e5-d8512b421f86" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="529.6,705.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="cd9da5d3-e83d-40a1-89e5-d8512b421f86" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,460" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,465.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='0' Name='Actions' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions Url' ReferenceIdx='1' Name='Actions Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WIID' ReferenceIdx='2' Name='WIID'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description' ReferenceIdx='3' Name='Description'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Type' ReferenceIdx='4' Name='Type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='5' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='6' Name='Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Actions' attr='fulltext' name2='Actions Url' attr2='href' /&gt;&lt;column name='WIID' attr='fulltext' /&gt;&lt;column name='Description' attr='fulltext' /&gt;&lt;column name='Type' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='0' Name='Actions' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions Url' ReferenceIdx='1' Name='Actions Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WIID' ReferenceIdx='2' Name='WIID'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description' ReferenceIdx='3' Name='Description'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Type' ReferenceIdx='4' Name='Type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='5' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='6' Name='Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Actions' attr='fulltext' name2='Actions Url' attr2='href' /&gt;&lt;column name='WIID' attr='fulltext' /&gt;&lt;column name='Description' attr='fulltext' /&gt;&lt;column name='Type' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="433.6,197.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" Version="V3">
                   <uix:NExtractData.Target>
                     <uix:TargetAnchorable DesignTimeRectangle="334, 451, 1249, 526" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="eb40a303-614d-412c-ace0-1506262a6e2a" InformativeScreenshot="a9ec0e21acf03013b2b6ea6ea2e06e13.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                   </uix:NExtractData.Target>
                 </uix:NExtractData>
-                <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="ACME_Data.csv" sap:VirtualizedContainerService.HintSize="433.6,180" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
+                <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\Nisha.Bhojwani\OneDrive - Wolters Kluwer\Documents\UiPath\csvfile.csv" sap:VirtualizedContainerService.HintSize="433.6,180" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
               </Sequence>
             </ActivityAction>
           </uix:NApplicationCard.Body>
@@ -168,11 +162,12 @@
         </uix:NApplicationCard>
       </Sequence>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <FlowStep x:Name="__ReferenceID0">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">200,207.6</av:Point>
               <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">310.4,242.8 255.2,242.8 255.2,257.6</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence DisplayName="Read csv" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
@@ -181,104 +176,104 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[DataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="ACME_Data.csv" sap:VirtualizedContainerService.HintSize="433.6,178.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+            <ui:ReadCsvFile DataTable="[DataTable]" Delimitator="Comma" DisplayName="Read CSV" FilePath="C:\Users\Nisha.Bhojwani\OneDrive - Wolters Kluwer\Documents\UiPath\csvfile.csv" sap:VirtualizedContainerService.HintSize="433.6,178.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
           </Sequence>
-        </FlowStep>
-      </FlowStep.Next>
-    </FlowStep>
-    <x:Reference>__ReferenceID0</x:Reference>
-    <FlowStep x:Name="__ReferenceID1">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">195,295</av:Point>
-          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">250.2,365.4 250.2,365.4</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Enter Data" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="545.6,2319.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-          <ui:ForEachRow.Body>
-            <ActivityAction x:TypeArguments="sd:DataRow">
-              <ActivityAction.Argument>
-                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-              </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,2130.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">200,257.6</av:Point>
+                  <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">290,257.6 290,207.60000000000002</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Enter Data" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME Data Form" sap:VirtualizedContainerService.HintSize="449.6,2041.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Version="V2">
-                  <uix:NApplicationCard.Body>
-                    <ActivityAction x:TypeArguments="x:Object">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="545.6,2330.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1801.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,2141.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="WIID" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;WIID&quot;).ToString]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="583, 478, 376, 40" CvType="InputBox" DesignTimeRectangle="589, 484, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='WIID' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='WIID' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="590f684e-50dd-4588-aeeb-81c5f3dbc561" InformativeScreenshot="90ce91beb8549dd3b4a82d74150baf7e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                        </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Description" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Description&quot;).ToString]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="583, 665, 377, 40" CvType="InputBox" DesignTimeRectangle="589, 671, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Description' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Description' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="be4b44ba-7dce-4739-a7b1-215e585661c7" InformativeScreenshot="946af6934c9900cfc08adb8480717ca9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                        </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Type&quot;).ToString]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="584, 851, 377, 41" CvType="InputBox" DesignTimeRectangle="589, 858, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Type' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Type' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="b3d17677-37c0-4a04-aa7f-8d7a9320ad26" InformativeScreenshot="dc681df7200d77b4a91acdce86bd5a2f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                        </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Status" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Status&quot;).ToString]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="583, 765, 376, 39" CvType="InputBox" DesignTimeRectangle="589, 770, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Status' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Status' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="f2eb6285-4f38-4144-9068-f65c58e3fe04" InformativeScreenshot="bf994b81ed97993b42554e531f568b16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                        </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Date" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Date&quot;).ToString]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="584, 949, 376, 41" CvType="InputBox" DesignTimeRectangle="589, 957, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Date' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Date' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="8ed8286c-7a6f-4f9b-bab0-4ffea9b7dc42" InformativeScreenshot="952fcdf1892e59ba6f9e12cde5ec53b0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                        </uix:NTypeInto>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Get link'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Version="V3">
-                          <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="556, 804, 129, 50" CvTextArea="586, 820, 68, 17" CvTextArgument="Get link" CvType="Button" DesignTimeRectangle="559, 807, 125, 45" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='l4V7wb Fxmcue' aaname='' check:innerText='Get link' /&gt;" Guid="4c75902c-9abe-40c4-b09e-b3973fde726d" InformativeScreenshot="9adae5c01333efe9563173ebccfa3d71.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
-                          </uix:NClick.Target>
-                        </uix:NClick>
-                        <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="353.6,130.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                        <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="353.6,107.2" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME Data Form" sap:VirtualizedContainerService.HintSize="449.6,2055.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1815.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="WIID" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;WIID&quot;).ToString]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="583, 478, 376, 40" CvType="InputBox" DesignTimeRectangle="589, 484, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='WIID' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='WIID' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="590f684e-50dd-4588-aeeb-81c5f3dbc561" InformativeScreenshot="90ce91beb8549dd3b4a82d74150baf7e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Description" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Description&quot;).ToString]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="583, 665, 377, 40" CvType="InputBox" DesignTimeRectangle="589, 671, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Description' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Description' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="be4b44ba-7dce-4739-a7b1-215e585661c7" InformativeScreenshot="946af6934c9900cfc08adb8480717ca9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Type&quot;).ToString]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="584, 851, 377, 41" CvType="InputBox" DesignTimeRectangle="589, 858, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Type' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Type' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="b3d17677-37c0-4a04-aa7f-8d7a9320ad26" InformativeScreenshot="dc681df7200d77b4a91acdce86bd5a2f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Status" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Status&quot;).ToString]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="583, 765, 376, 39" CvType="InputBox" DesignTimeRectangle="589, 770, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Status' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Status' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="f2eb6285-4f38-4144-9068-f65c58e3fe04" InformativeScreenshot="bf994b81ed97993b42554e531f568b16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Date" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Text="[CurrentRow(&quot;Date&quot;).ToString]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="584, 949, 376, 41" CvType="InputBox" DesignTimeRectangle="589, 957, 370, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Date' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Date' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="8ed8286c-7a6f-4f9b-bab0-4ffea9b7dc42" InformativeScreenshot="952fcdf1892e59ba6f9e12cde5ec53b0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  </uix:NTypeInto.Target>
+                                </uix:NTypeInto>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Get link'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="55eff1c6-a91d-4db6-8e42-3a01b0f6f7d4" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" CvElementArea="556, 804, 129, 50" CvTextArea="586, 820, 68, 17" CvTextArgument="Get link" CvType="Button" DesignTimeRectangle="559, 807, 125, 45" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='l4V7wb Fxmcue' aaname='' check:innerText='Get link' /&gt;" Guid="4c75902c-9abe-40c4-b09e-b3973fde726d" InformativeScreenshot="9adae5c01333efe9563173ebccfa3d71.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="353.6,130.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="353.6,107.2" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="654395b6788946733b83c9cebf0968c8.jpg" Selector="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" Title="ACME Data Form" Url="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" />
+                          </uix:NApplicationCard.TargetApp>
+                        </uix:NApplicationCard>
                       </Sequence>
                     </ActivityAction>
-                  </uix:NApplicationCard.Body>
-                  <uix:NApplicationCard.TargetApp>
-                    <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="654395b6788946733b83c9cebf0968c8.jpg" Selector="&lt;html app='chrome.exe' title='ACME Data Form' /&gt;" Title="ACME Data Form" Url="https://docs.google.com/forms/d/116E0KprvSf8QB7S0x7t9FHs_FPMBcoILfRw0vp_eQg4/prefill" />
-                  </uix:NApplicationCard.TargetApp>
-                </uix:NApplicationCard>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
               </Sequence>
-            </ActivityAction>
-          </ui:ForEachRow.Body>
-        </ui:ForEachRow>
-      </Sequence>
-      <FlowStep.Next>
-        <x:Reference>__ReferenceID1</x:Reference>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
       </FlowStep.Next>
     </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
     <FlowStep x:Name="__ReferenceID3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">195,75</av:Point>
+          <av:Point x:Key="ShapeLocation">200,107.6</av:Point>
           <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">250.2,145.4 250.2,157.6 255.2,157.6</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">255.2,178 255.2,157.6</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Sequence DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -287,13 +282,13 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="449.6,740.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="33942583-75b9-4fbd-b580-7bec55ba85e7" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="449.6,746.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="33942583-75b9-4fbd-b580-7bec55ba85e7" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,500.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,506.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="variable1" />
                 </Sequence.Variables>
@@ -302,7 +297,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Work Items'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33942583-75b9-4fbd-b580-7bec55ba85e7" Version="V3">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Work Items'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33942583-75b9-4fbd-b580-7bec55ba85e7" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/home" CvElementArea="331, 655, 255, 63" CvTextArea="415, 674, 116, 21" CvTextArgument="Work Items" CvType="Button" DesignTimeRectangle="334, 658, 250, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='                          Work Items' parentid='dashmenu' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                          Work Items' parentid='dashmenu' tag='BUTTON' type='button' class='btn btn-default btn-lg' check:innerText='Work Items' /&gt;" Guid="a3fe2283-6ac2-4b8f-ad99-a693808acb5a" InformativeScreenshot="dc0371831d47949da50031f10330c8fa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                       <uix:TargetAnchorable.PointOffset>
